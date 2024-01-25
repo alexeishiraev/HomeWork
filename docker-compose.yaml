@@ -1,0 +1,10 @@
+version: '3'
+services:
+  yolo_project:
+    image: alexeishiraev/code_test3:second_test
+    ports:
+      - "5000:5000"  # Замените порт, если ваше приложение слушает другой порт
+    volumes:
+      - /home/pi/PycharmProjects/HomeWork/SecondProject:/app  # Замените путь, если ваш код находится в другом месте
+    restart: always
+
